@@ -13,4 +13,4 @@ for i in range(1, alunos + 1):
       divisao += 1
   
   if (divisao != 0):
-    print(f"Média do {1}º aluno: {total / divisao}")
+    print(f"Média do {i}º aluno: {total / divisao}")
