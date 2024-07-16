@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Este é um site dedicado ao ensino de JavaScript, ensinando os fundamentos para programadores iniciantes.">
+  <meta name="keywords" content="JavaScript, ensino de JavaScript, tutoriais de JavaScript, programação web, desenvolvimento web, cursos de JavaScript">
+  <title>Tutorial JS</title>
+</head>
+<body>
+  <header>
+    <h1>Fundamentos de JavaScript</h1>
+    <nav>
+      <a href="#variaveis">Variáveis</a>
+      <a href="#tipos-de-dados">Tipos de Dados</a>
+      <a href="#operadores">Operadores</a>
+      <a href="#estruturas-de-controle">Estruturas de Controle</a>
+      <a href="#funcoes">Funções</a>
+    </nav>
+    <img src="https://storage.googleapis.com/medium-feed.appspot.com/images%2F9353691196%2F2f49650ed42b1-Para-que-e-usado-o-JavaScript.jpg" alt="JavaScript" width="100%">
+  </header>
+  <main>
+    <section id="variaveis">
+      <h2>Variáveis</h2>
+      <p>As Em JavaScript, as variáveis são utilizadas para armazenar dados que podem ser manipulados e utilizados ao longo do código. As variáveis podem ser declaradas usando var, let ou const, cada uma com suas próprias regras de escopo e hoisting. var possui escopo de função e sofre hoisting, enquanto let e const têm escopo de bloco, sendo que const é utilizada para declarar constantes cujo valor não pode ser reatribuído.</p>
+      <pre>
+        <code>
+          var number = 123
+          let string = "Hello, world!"
+          const function = () => {}
+        </code>
+      </pre>
+    </section>
+    <section id="tipos-de-dados">
+      <h2>Tipos de Dados</h2>
+      <p>JavaScript possui uma variedade de tipos de dados que podem ser categorizados como primitivos e objetos. Os tipos primitivos incluem string (cadeias de caracteres), number (números), boolean (valores verdadeiro ou falso), null (ausência proposital de valor), undefined (valor não definido), symbol (valores únicos e imutáveis) e bigint (números inteiros arbitrariamente grandes). Objetos são coleções de propriedades, sendo fundamentais para estruturar dados complexos.</p>
+      <pre>
+        <code>
+          const number = 123
+          const string = "Hello, world!"
+          const boolean = true
+          const object = {}
+          const array = []
+        </code>
+      </pre>
+    </section>
+    <section id="operadores">
+      <h2>Operadores</h2>
+      <p>Operadores em JavaScript são utilizados para realizar operações sobre valores e variáveis. Operadores aritméticos (+, -, *, /, %) são usados para cálculos matemáticos. Operadores de comparação (==, ===, !=, !==, >, <, >=, <=) são usados para comparar valores. Operadores lógicos (&&, ||, !) ajudam a combinar ou inverter condições booleanas.Operadores de atribuição (=, +=, -=, *=, /=, %=) atribuem valores às variáveis.</p>
+      <pre>
+        <code>
+          5 * 20 >= 80 //true
+
+          !true //false
+          
+          const num = 3
+          num *= 3
+          num === 9 //true
+        </code>
+      </pre>
+    </section>
+    <section id="estruturas-de-controle">
+      <h2>Estruturas de Controle</h2>
+      <p>Estruturas de controle em JavaScript permitem que o fluxo do programa seja alterado com base em condições específicas. Condicionais como if, else, else if e switch são usadas para executar diferentes blocos de código dependendo das condições. Laços como for, while e do...while permitem a execução repetitiva de um bloco de código enquanto uma condição for verdadeira. Comandos de controle de fluxo como break e continue podem interromper ou continuar a execução de laços conforme necessário.</p>
+      <pre>
+        <code>
+          let num = 0
+          for (let i = 0; i < 10; i++) {
+            num += i
+          }
+
+          if (num > 10) {
+            console.log(num)
+          }
+        </code>
+      </pre>
+    </section>
+    <section id="funcoes">
+      <h2>Funções</h2>
+      <p>Funções são blocos de código reutilizáveis que realizam tarefas específicas e podem ser executadas quando chamadas. Em JavaScript, funções podem ser declaradas de várias formas, incluindo declarações de função (function), expressões de função e arrow functions (() => {}). Funções podem aceitar parâmetros e retornar valores, permitindo a modularidade e a reutilização do código. O escopo das variáveis dentro das funções é limitado ao corpo da função, proporcionando encapsulamento e evitando conflitos com variáveis globais.</p>
+      <pre>
+        <code>
+          function print(text) {
+            console.log(text)
+          }
+
+          let isOpen = false
+          const handleClick = () => {
+            isOpen = !isOpen
+          }
+        </code>
+      </pre>
+    </section>
+  </main>
+  <footer>
+    Veja mais no meu github:
+    <a href="https://github.com/heitorrodriguescarvalho" target="_blank">
+      <img src="https://cdn.icon-icons.com/icons2/936/PNG/512/github-logo_icon-icons.com_73546.png" width="16px" height="16px" alt="Github icon">
+    </a>
+  </footer>
+</body>
+</html>
