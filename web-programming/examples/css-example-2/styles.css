@@ -1,0 +1,23 @@
+body {
+  background-color: #262424;
+  color: #f3f5ee;
+}
+
+p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 24px;
+}
+
+#title {
+  font-size: 28pt;
+  text-align: center;
+}
+
+.table {
+  border-collapse: collapse;
+}
+
+.table td,
+.table th {
+  border: 1px solid gray;
+}
