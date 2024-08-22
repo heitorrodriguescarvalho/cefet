@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+    <title>Travel Wonders</title>
+  </head>
+  <body>
+    <main>
+      <section id="hero" class="text-white">
+        <header id="header">
+          <div class="center gap-4">
+            <img
+              class="size-4 invert-color"
+              src="images/logo-travel-wonders.svg"
+            />
+            <p>Travel Wonders</p>
+          </div>
+          <nav class="flex gap-2">
+            <a href="#">Home</a>
+            <a href="#">Explorar</a>
+            <a href="#">Ofertas</a>
+            <a href="#">Blog</a>
+            <a href="#">Preços</a>
+          </nav>
+          <div class="center gap-4">
+            <a href="#">Login</a>
+            <a href="#" class="login-btn bg-primary">Sign Up</a>
+          </div>
+        </header>
+        <form action="" id="hero-form" class="bg-white" method="post">
+          <div class="hero-form-column">
+            <label for="destination">Destino</label>
+            <input id="destino" class="hero-form-input" type="text" />
+          </div>
+          <div class="hero-form-column">
+            <label for="pessoas">Pessoas</label>
+            <input class="hero-form-input" type="number" />
+          </div>
+          <div class="hero-form-column">
+            <label>Check In</label>
+            <input class="hero-form-input" type="date" />
+          </div>
+          <div class="hero-form-column">
+            <label>Check Out</label>
+            <input class="hero-form-input" type="date" />
+          </div>
+          <button id="hero-form-submit" class="bg-primary text-white">
+            Reservar
+          </button>
+        </form>
+      </section>
+      <section id="popular-destinations">
+        <header id="popular-destinations-header">
+          <h2 class="title">Destinos Populares</h2>
+          <div class="line bg-primary"></div>
+          <p class="subtitle">
+            Os destinos mais populares ao redor do mundo, de lugares históricos
+            a maravilhas naturais.
+          </p>
+        </header>
+        <div id="carousel">
+          <div class="card-1 bg-image-1">
+            <div class="card-details">
+              <p class="card-title">Monument of Berlimn</p>
+              <div class="card-subtitle">
+                <img
+                  src="images/local.svg"
+                  class="local-icon invert-color"
+                  alt="Ponteiro de localização"
+                />
+                <p>Berlim, Alemanha</p>
+              </div>
+            </div>
+          </div>
+          <div class="card-1 bg-image-2">
+            <div class="card-details">
+              <p class="card-title">Milennium Bridge</p>
+              <div class="card-subtitle">
+                <img
+                  src="images/local.svg"
+                  class="local-icon invert-color"
+                  alt="Ponteiro de localização"
+                />
+                <p>Londres, Reino Unido</p>
+              </div>
+            </div>
+          </div>
+          <div class="card-1 bg-image-3">
+            <div class="card-details">
+              <p class="card-title">Rialto Bridge</p>
+              <div class="card-subtitle">
+                <img
+                  src="images/local.svg"
+                  class="local-icon invert-color"
+                  alt="Ponteiro de localização"
+                />
+                <p>Veneza, Itália</p>
+              </div>
+            </div>
+          </div>
+          <div class="card-1 bg-image-4">
+            <div class="card-details">
+              <p class="card-title">Sea of Orange Tiles</p>
+              <div class="card-subtitle">
+                <img
+                  src="images/local.svg"
+                  class="local-icon invert-color"
+                  alt="Ponteiro de localização"
+                />
+                <p>Lisboa, Portugal</p>
+              </div>
+            </div>
+          </div>
+          <div class="card-1 bg-image-5">
+            <div class="card-details">
+              <p class="card-title">Eiffel Tower</p>
+              <div class="card-subtitle">
+                <img
+                  src="images/local.svg"
+                  class="local-icon invert-color"
+                  alt="Ponteiro de localização"
+                />
+                <p>Paris, França</p>
+              </div>
+            </div>
+          </div>
+          <div class="card-1 bg-image-6">
+            <div class="card-details">
+              <p class="card-title">Macchu Pichu</p>
+              <div class="card-subtitle">
+                <img
+                  src="images/local.svg"
+                  class="local-icon invert-color"
+                  alt="Ponteiro de localização"
+                />
+                <p>Cordilheira do Andes, Peru</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="offer">
+        <header id="offer-header">
+          <h2 class="title">Ofertas</h2>
+          <div class="line bg-primary"></div>
+          <p class="subtitle">
+            As viagens mais bem avaliadas com descontos de até 40%.
+          </p>
+        </header>
+        <div id="offer-cards">
+          <div class="card-2">
+            <img
+              src="images/offer/card-01.png"
+              class="offer-image"
+              alt="Rio de Janeiro"
+            />
+            <div class="offer-details">
+              <div class="offer-infos">
+                <p class="offer-title">Rio de Janeiro, Rio de Janeiro</p>
+                <div class="offer-price">
+                  <p class="new-offer-price">R$540,00</p>
+                  <p class="old-offer-price">R$900,00</p>
+                </div>
+              </div>
+              <div class="offer-actions">
+                <div class="stars">
+                  <img src="images/star.svg" class="star-icon" alt="star" />
+                  <img src="images/star.svg" class="star-icon" alt="star" />
+                  <img src="images/star.svg" class="star-icon" alt="star" />
+                  <img src="images/star.svg" class="star-icon" alt="star" />
+                  <img src="images/star.svg" class="star-icon" alt="star" />
+                  <p class="rating">5.0</p>
+                </div>
+                <button class="offer-button text-white">
+                  <p>Reservar</p>
+                  <img
+                    src="images/arrow-right.svg"
+                    class="arrow-icon invert-color"
+                    alt="Seta para direita"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card-2">
+            <img
+              src="images/offer/card-02.png"
+              class="offer-image"
+              alt="Kyoto"
+            />
+            <div class="offer-details">
+              <div class="offer-infos">
+                <p class="offer-title">Kyoto, Japão</p>
+                <div class="offer-price">
+                  <p class="new-offer-price">R$940,00</p>
+                  <p class="old-offer-price">R$1200,00</p>
+                </div>
+              </div>
+              <div class="offer-actions">
+                <div class="stars">
+                  <img src="images/star.svg" class="star-icon" alt="star" />
+                  <img src="images/star.svg" class="star-icon" alt="star" />
+                  <img src="images/star.svg" class="star-icon" alt="star" />
+                  <img src="images/star.svg" class="star-icon" alt="star" />
+                  <img src="images/star.svg" class="star-icon" alt="star" />
+                  <p class="rating">4.8</p>
+                </div>
+                <button class="offer-button text-white">
+                  <p>Reservar</p>
+                  <img
+                    src="images/arrow-right.svg"
+                    class="arrow-icon invert-color"
+                    alt="Seta para direita"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card-2">
+            <img
+              src="images/offer/card-03.png"
+              class="offer-image"
+              alt="Roma"
+            />
+            <div class="offer-details">
+              <div class="offer-infos">
+                <p class="offer-title">Roma, Itália</p>
+                <div class="offer-price">
+                  <p class="new-offer-price">R800,00</p>
+                  <p class="old-offer-price">R$1100,00</p>
+                </div>
+              </div>
+              <div class="offer-actions">
+                <div class="stars">
+                  <img src="images/star.svg" class="star-icon" alt="star" />
+                  <img src="images/star.svg" class="star-icon" alt="star" />
+                  <img src="images/star.svg" class="star-icon" alt="star" />
+                  <img src="images/star.svg" class="star-icon" alt="star" />
+                  <img src="images/star.svg" class="star-icon" alt="star" />
+                  <p class="rating">4.7</p>
+                </div>
+                <button class="offer-button text-white">
+                  <p>Reservar</p>
+                  <img
+                    src="images/arrow-right.svg"
+                    class="arrow-icon invert-color"
+                    alt="Seta para direita"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="pricing">
+        <header id="pricing-header">
+          <h2 class="title">Preços</h2>
+          <div class="line bg-primary"></div>
+          <p class="subtitle">
+            Os preços das viagens de acordo com a distância do destino.
+          </p>
+        </header>
+        <table>
+          <tr>
+            <th>Distância em quilômetros</th>
+            <th>Econômica</th>
+            <th>Premium Econômica</th>
+            <th>Executiva</th>
+            <th>Primeira Classe</th>
+          </tr>
+          <tr>
+            <td>0 - 1.046</td>
+            <td>6.000</td>
+            <td>9.000</td>
+            <td>12.500</td>
+            <td>24.000</td>
+          </tr>
+          <tr>
+            <td>1.047 - 1.851</td>
+            <td>9.000</td>
+            <td>12.500</td>
+            <td>16.500</td>
+            <td>33.000</td>
+          </tr>
+          <tr>
+            <td>1.852 - 3.218</td>
+            <td>11.000</td>
+            <td>16.500</td>
+            <td>22.000</td>
+            <td>44.000</td>
+          </tr>
+          <tr>
+            <td>3.219 - 4.828</td>
+            <td>13.000</td>
+            <td>25.750</td>
+            <td>38.750</td>
+            <td>51.500</td>
+          </tr>
+          <tr>
+            <td>4.829 - 6.437</td>
+            <td>20.750</td>
+            <td>41.250</td>
+            <td>62.000</td>
+            <td>82.500</td>
+          </tr>
+          <tr>
+            <td>6.438 - 8.851</td>
+            <td>25.750</td>
+            <td>51.500</td>
+            <td>77.250</td>
+            <td>103.000</td>
+          </tr>
+          <tr>
+            <td>8.852 - 10.460</td>
+            <td>31.000</td>
+            <td>62.000</td>
+            <td>92.750</td>
+            <td>123.750</td>
+          </tr>
+          <tr>
+            <td>10.461 - 11.265</td>
+            <td>36.250</td>
+            <td>72.250</td>
+            <td>108.250</td>
+            <td>144.250</td>
+          </tr>
+          <tr>
+            <td>11.266 - 18.944</td>
+            <td>51.500</td>
+            <td>103.000</td>
+            <td>154.500</td>
+            <td>206.000</td>
+          </tr>
+        </table>
+      </section>
+    </main>
+    <footer>
+      <div id="contact">
+        <a href="#" class="contact-row">
+          <img
+            src="images/contact/chat.svg"
+            alt="chat"
+            class="invert-color contact-icon"
+          />
+          <p>Chat with Sales</p>
+        </a>
+        <div class="contact-row">
+          <img
+            src="images/contact/phone.svg"
+            alt="phone"
+            class="invert-color contact-icon"
+          />
+          <a href="tel:+5537900000000">+55 37 90000-0000</a>
+        </div>
+        <a href="mailto:sales@travelwonders.com" class="contact-row">
+          <img
+            src="images/contact/mail.svg"
+            alt="mail"
+            class="invert-color contact-icon"
+          />
+          <p>sales@travelwonders.com</p>
+        </a>
+      </div>
+      <div id="company-links">
+        <a href="#" class="company-link">Sobre a empresa</a>
+        <a href="#" class="company-link">Carreiras</a>
+        <a href="#" class="company-link">Avaliações</a>
+        <a href="#" class="company-link">Legal</a>
+        <a href="#" class="company-link">Termos de Uso</a>
+        <a href="#" class="company-link">Termos de Privacidade</a>
+      </div>
+      <div id="social">
+        <a href="#"
+          ><img
+            class="invert-color social-icon"
+            src="images/contact/instagram.svg"
+        /></a>
+        <a href="#"
+          ><img
+            class="invert-color social-icon"
+            src="images/contact/twitter.svg"
+        /></a>
+        <a href="#"
+          ><img
+            class="invert-color social-icon"
+            src="images/contact/youtube.svg"
+        /></a>
+        <a href="#"
+          ><img
+            class="invert-color social-icon"
+            src="images/contact/facebook.svg"
+        /></a>
+        <a href="#"
+          ><img
+            class="invert-color social-icon"
+            src="images/contact/linkedin.svg"
+        /></a>
+      </div>
+    </footer>
+  </body>
+</html>
