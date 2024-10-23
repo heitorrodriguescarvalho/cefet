@@ -1,0 +1,16 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#content{
+    background-color: #e7eef5;
+    height: 500px;
+}
+.item{
+    height: 100px;
+    width: 100px;
+    color:black;
+    background-color: white;
+    margin: 5px;
+}

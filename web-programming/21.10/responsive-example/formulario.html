@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <title>Exercício de Formulário</title>
+
+    <style>
+        input,
+        label,
+        h2 {
+            display: block;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h2>Formulário</h2>
+    <form action="#" method="post">
+        <label for="nome">Nome</label>
+        <input type="text" name="nome" id="txtnome" size="30" maxlength="100" required placeholder="Insira seu nome"
+            autofocus>
+
+        <label for="telefone">Telefone</label>
+        <input type="tel" name="telefone" id="txttelefone" size="30" maxlength="30" placeholder="(xx)xxxx-xxxx">
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="txtemail" size="30" maxlength="60" required placeholder="xxxx@xxxx.com">
+
+        <label for="website">Web Site</label>
+        <input type="url" name="website" id="txtwebsite" size="30" maxlength="60">
+
+        <label for="filhos">Número de Filhos</label>
+        <input type="number" name="filhos" id="filhos" min="0" max="5" value="0">
+        <label for="aniversario">Aniversário</label>
+        <input type="date" name="aniversario" id="aniversario" size="30">
+
+        <label for="nome_loja">Nome loja</label>
+        <input type="text" name="nome_loja" id="nome_loja" placeholder="Digite nome da loja" size="30" list="lojas">
+        <datalist id="lojas">
+            <option value="Centauro">Centauro</option>
+            <option value="Centro Automotivo">Centro automotivo</option>
+            <option value="Centro Otico">Centro Otico</option>
+            <option value="Centro beleza">Centro Beleza</option>
+            <option value="Magazine Luiza">Magazine Luiza</option>
+            <option value="Americanas">Americanas</option>
+        </datalist>
+        <label for="cor">Selecione uma cor</label>
+        <input type="color" name="cor" id="cor">
+        <label for="pesquisar">Digite termo para pesquisar</label>
+        <input type="search" name="pesquisar" id="pesquisar">
+        <!-- Inserir checkbox de gênero de filme-->
+        <!-- Inserir radio  button qual região você mora-->
+        <!-- Inserir campo para informar senha e confirmar-->
+        <!-- Inserir uma barra range "Quanto você recomendaria Loja X ?"-->
+        <!-- Inserir uma lista utilizando select com os estados da região sudeste-->
+        <!-- Inserir um textarea para que o usuário insira uma mensagem -->
+        <input type="submit" value="Enviar" id="enviar" name="enviar">
+    </form>
+
+</body>
+
+</html>
