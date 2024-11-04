@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#main {
+  display: grid;
+  grid-template-rows: 15vh 10vh 55vh 20vh;
+  grid-template-areas: "area1 area1" "area2 area2" "area3 area4" "area5 area5";
+}
+
+.mainHeader {
+  grid-area: area1;
+  background-color: blue;
+}
+
+.mainNav {
+  grid-area: area2;
+  background-color: violet;
+}
+
+.mainContent {
+  grid-area: area3;
+  background-color: yellow;
+}
+
+.mainAside {
+  grid-area: area4;
+  background-color: green;
+}
+
+.mainFooter {
+  grid-area: area5;
+  background-color: gray;
+}
