@@ -1,0 +1,9 @@
+label,
+input {
+  display: block;
+}
+
+body {
+  display: grid;
+  justify-items: center;
+}

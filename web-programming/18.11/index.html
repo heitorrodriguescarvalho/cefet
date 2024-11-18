@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="style.css" type="text/css" /> -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <title>Formulário</title>
+  </head>
+  <body>
+    <div id="form" class="container p-5">
+      <h2 class="mb-5">Formulário</h2>
+
+      <div class="mb-5">
+        <label for="name" class="form-label">Nome</label>
+        <input
+          type="text"
+          id="name"
+          class="form-control"
+          placeholder="Insira seu nome..."
+        />
+      </div>
+
+      <div class="mb-5">
+        <label class="form-label" for="phone">Telefone</label>
+        <input
+          class="form-control"
+          type="number"
+          id="phone"
+          placeholder="(00) 00000-0000"
+        />
+      </div>
+
+      <div class="mb-5">
+        <label class="form-label" for="email">Email</label>
+        <input
+          class="form-control"
+          type="email"
+          id="email"
+          placeholder="example@mail.com"
+        />
+      </div>
+
+      <div class="mb-5">
+        <label class="form-label" for="site">Website</label>
+        <input
+          class="form-control"
+          type="url"
+          id="site"
+          placeholder="www.website.com"
+        />
+      </div>
+
+      <div class="mb-5">
+        <label class="form-label" for="children">Número de filhos</label>
+        <input
+          class="form-control"
+          type="number"
+          value="0"
+          min="0"
+          id="children"
+          placeholder="Insira seu número de filhos..."
+        />
+      </div>
+
+      <div class="mb-5">
+        <label class="form-label" for="birthday">Data de Nascimento</label>
+        <input class="form-control" type="date" id="birthday" />
+      </div>
+
+      <div class="mb-5">
+        <label class="form-label" for="store-name">Nome da loja</label>
+        <input class="form-control" type="text" id="store-name" list="store" />
+        <datalist id="store">
+          <option value="Centauro">Centauro</option>
+          <option value="Amazon">Amazon</option>
+          <option value="Americanas">Americanas</option>
+          <option value="Mercado Livre">Mercado Livre</option>
+        </datalist>
+      </div>
+
+      <div class="mb-5">
+        <label class="form-label" for="color">Cor</label>
+        <input class="form-control" type="color" id="color" />
+      </div>
+
+      <div class="mb-5">
+        <label class="form-label" for="search">Pesquisa</label>
+        <input class="form-control" type="search" id="search" />
+      </div>
+
+      <div class="mb-5">
+        <label class="form-label" for="movie-genre">Gênero do Filme</label>
+        <div class="form-check">
+          <input type="checkbox" id="movie-genre" class="form-check-input" />
+          Ação
+        </div>
+        <div class="form-check">
+          <input type="checkbox" id="movie-genre" class="form-check-input" />
+          Terror
+        </div>
+        <div class="form-check">
+          <input type="checkbox" id="movie-genre" class="form-check-input" />
+          Aventura
+        </div>
+      </div>
+
+      <div class="mb-5">
+        <label id="region" class="form-label">Região</label>
+        <div class="form-check">
+          <input type="radio" id="region1" name="region" value="sudeste" />
+          Sudeste
+          <input type="radio" id="region2" name="region" value="centro-oeste" />
+          Centro-Oeste
+          <input type="radio" id="region3" name="region" value="norte" />
+          Norte
+          <input type="radio" id="region45" name="region" value="sul" />
+          Sul
+          <input type="radio" id="region5" name="region" value="nordeste" />
+          Nordeste
+        </div>
+      </div>
+
+      <input
+        class="btn btn-primary form-control g3"
+        type="submit"
+        value="Enviar"
+      />
+    </div>
+  </body>
+</html>
