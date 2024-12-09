@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário Estilizado</title>
+  <!-- Link do CSS do Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+   
+    
+  </style>
+</head>
+<body>
+
+<div class="form-container">
+  <div class="form-title">Cadastro de Usuário</div>
+  <form>
+    <!-- Nome -->
+    <div class="mb-3">
+      <label for="firstName" class="form-label">Nome</label>
+      <input type="text" class="form-control" id="firstName" placeholder="Insira o seu nome">
+    </div>
+
+    <!-- Sobrenome -->
+    <div class="mb-3">
+      <label for="lastName" class="form-label">Sobrenome</label>
+      <input type="text" class="form-control" id="lastName" placeholder="Insira o seu sobrenome">
+    </div>
+
+    <!-- Email -->
+    <div class="mb-3">
+      <label for="email" class="form-label">E-mail</label>
+      <input type="email" class="form-control" id="email" placeholder="Insira o seu e-mail">
+    </div>
+
+    <!-- Senha -->
+    <div class="mb-3">
+      <label for="password" class="form-label">Senha</label>
+      <input type="password" class="form-control" id="password" placeholder="Digite a sua senha">
+    </div>
+
+    <!-- Confirmar Senha -->
+    <div class="mb-3">
+      <label for="confirmPassword" class="form-label">Confirmar Senha</label>
+      <input type="password" class="form-control" id="confirmPassword" placeholder="Repita a sua senha">
+    </div>
+
+    <!-- Botão -->
+    <button type="submit" class="btn btn-custom w-100">Cadastrar</button>
+  </form>
+</div>
+
+<!-- JavaScript do Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
