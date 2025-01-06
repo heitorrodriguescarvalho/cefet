@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teste de Javascript</title>
+  </head>
+  <body>
+    <p id="p1"></p>
+    <script type="text/javascript">
+      let nome = prompt("Informe seu nome:");
+      let idade = parseInt(prompt("Informe sua idade:"));
+
+      const paragraph = document.getElementById("p1");
+
+      if (idade < 18) {
+        paragraph.textContent = "Menor de idade";
+      } else {
+        paragraph.textContent = "Maior de idade";
+      }
+    </script>
+  </body>
+</html>
