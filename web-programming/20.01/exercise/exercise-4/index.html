@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Exercício 4</title>
+  </head>
+  <body>
+    <main class="card">
+      <header class="header">
+        <h1 class="title">Perguntas e Respostas</h1>
+      </header>
+
+      <section class="content">
+        <div class="field">
+          <label for="input-1">Pergunta</label>
+          <select onchange="handleChange()" id="input-1">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+          </select>
+        </div>
+
+      <section class="result">
+        <p id="result-text"></p>
+      </section>
+
+      <div class="field">
+          <label for="input-2">Resposta</label>
+          <input id="input-2">
+        </div>
+
+      <footer>
+        <button type="submit" id="submit-button" onclick="handleClick()">
+          Responder
+        </button>
+      </footer>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
