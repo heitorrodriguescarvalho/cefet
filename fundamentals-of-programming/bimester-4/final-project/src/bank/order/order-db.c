@@ -52,6 +52,11 @@ Order Get_order_by_index(int index)
   return current_account_orders[index];
 }
 
+void Cancel_order(int index)
+{
+  current_account_orders[index].status = 2;
+}
+
 void Update_current_account_orders()
 {
   int i;

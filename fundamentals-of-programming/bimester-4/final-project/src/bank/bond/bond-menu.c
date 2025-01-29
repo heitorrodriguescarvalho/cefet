@@ -53,7 +53,7 @@ void Bonds_pagination()
       printf("%5.2f%% a.a.\n", bond.annual_interest_rate * 100);
     }
 
-    printf("\nUm mês do investimento equivalie a 1 minuto real");
+    printf("\nUm mês do investimento equivalie a 1 minuto real\n\n");
 
     if (current_page + 1 < pages)
       printf(" 1. Próxima página\n");
@@ -126,7 +126,7 @@ void Buy_bond_options(char bond_name[])
 {
   int input;
   double value;
-  float years_to_expire; // TODO: define only one var
+  float years_to_expire;
   Bond bond = Get_bond_by_name(bond_name);
 
   while (1)
@@ -261,7 +261,7 @@ float Get_years(char message[], float min, float max)
   {
     system("clear");
 
-    printf("Restrições:\n\n\tMínimo: %.2f anos\n\tMáximo: %.2f anos\n\n%s", min, max, message);
+    printf("Restrições:\n\n\tMínimo: %.2f ano(s)\n\tMáximo: %.2f ano(s)\n\n%s", min, max, message);
     scanf("%f", &years);
 
     if (years < min || years > max)

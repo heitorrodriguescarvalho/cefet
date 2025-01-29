@@ -22,7 +22,6 @@ void Select_bank_option()
     system("clear");
 
     printf("Conta de %s\n\n1. Investir\n2. Depositar\n3. Sacar\n4. Transferir\n5. Ver saldo\n6. Sair\n\nEscolha uma opção: ", account->name);
-    printf("ok");
 
     scanf("%d", &input);
 
