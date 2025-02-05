@@ -168,7 +168,7 @@ void Check_balance()
     stock_amount += stock.price_history[stock.last_price_index] * account_stock.quantity;
   }
 
-  for (i = 0; i < bank_account->last_bond_index; i++)
+  for (i = 0; i <= bank_account->last_bond_index; i++)
     bond_amount += bank_account->bonds[i].investment_value;
 
   system("clear");

@@ -53,7 +53,7 @@ void Bonds_pagination()
       printf("%5.2f%% a.a.\n", bond.annual_interest_rate * 100);
     }
 
-    printf("\nUm mês do investimento equivalie a 1 minuto real\n\n");
+    printf("\nUm mês do investimento equivale a 1 minuto real\n\n");
 
     if (current_page + 1 < pages)
       printf(" 1. Próxima página\n");
