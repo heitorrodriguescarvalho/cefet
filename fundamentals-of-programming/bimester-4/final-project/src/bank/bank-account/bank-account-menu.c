@@ -160,7 +160,7 @@ void Check_balance()
 
   stock_count = Count_current_user_owned_stocks();
 
-  for (i = 0; i < stock_count; i++)
+  for (i = 0; i <= stock_count; i++)
   {
     account_stock = Get_current_user_stock_by_index(i);
     stock = Get_stock_by_symbol(account_stock.symbol);
